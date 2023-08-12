@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "hiking",
+    "description": "it's hiking"
+  },
+  {
+    "id": 2,
+    "title": "diving",
+    "description": "it's diving"
+  },
+  {
+    "id": 3,
+    "title": "snowboarding",
+    "description": "it's snowboarding"
+  }
+]

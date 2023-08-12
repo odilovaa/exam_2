@@ -1,0 +1,60 @@
+------------------------------Exam Project-----------------------------
+1.SERVICES =>
+    *POST : 
+    {
+        privete //  only admin can do
+        id, title, description, photo
+    };
+    *GET ALL : 
+    {
+        */get_all
+    };
+    *GET BY ID : 
+    {
+        */get/:id
+    };
+    *DELETE BY ID : 
+    {
+        privete //  only admin can do
+        */delete/:id
+    };
+
+
+2.*FEEDBACK =>
+    *POST : 
+    {
+        id, first_name, last_name, photo, profession, feedback(description)
+    };
+    *GET ALL : 
+    {
+        */get_all
+    };
+    *DELETE : 
+    {
+        privete // only admin can do
+        */delete_feedback/:id
+        {Authorization : admin's token, name : admin's name, password : admin's password(hushed)};
+    };
+
+
+3.CANTACTS =>
+    *POST : 
+    {
+       id, name, phone_number, email, message, view;
+    };
+    
+4.ADMIN PANEL =>
+    LOGIN :
+    {
+        {name : admin's name, password : admin's password(hushed)};
+        res:token
+    }
+    *CONFIRM CONTACT :
+    {
+        privete // only admin can see(confirm) contacts;
+        */contact_get/:id
+        {Authorization : admin's token};
+    }
+
+
+
